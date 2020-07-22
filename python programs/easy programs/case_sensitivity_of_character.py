@@ -1,5 +1,6 @@
 n = input()
 order = ord(n)
+
 if order >= 65 and order <= 90:
     print('Capital letter')
 elif order >= 97 and order <= 122:

@@ -1,4 +1,5 @@
 n = int(input('enter the number to reverse :'))
+
 reverse = 0
 while n > 0:
     rem = 0

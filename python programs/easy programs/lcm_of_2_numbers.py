@@ -1,6 +1,7 @@
 print('enter 2 numbers : ')
 n1 = int(input())
 n2 = int(input())
+
 lcm = 0
 if n1 > n2:
     lcm = n1

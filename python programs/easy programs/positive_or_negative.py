@@ -1,4 +1,5 @@
 n = int(input())
+
 if n > 0:
     print('even number')
 elif n < 0:
