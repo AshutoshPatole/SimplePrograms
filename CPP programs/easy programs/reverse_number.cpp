@@ -17,4 +17,5 @@ int main()
         number = number / 10;
     }
     cout << "the reverse of the number " << stored << " is " << reversed << endl;
+    return 0;
 }

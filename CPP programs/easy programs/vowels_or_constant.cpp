@@ -15,4 +15,5 @@ int main()
     {
         cout << "The entered character is constant" << endl;
     }
+    return 0;
 }

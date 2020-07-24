@@ -18,4 +18,5 @@ int main()
     {
         cout << "The number is zero" << endl;
     }
+    return 0;
 }

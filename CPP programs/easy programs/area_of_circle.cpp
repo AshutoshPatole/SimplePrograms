@@ -8,4 +8,5 @@ int main(){
     float area = 0.0;
     area = 3.14 * radius * radius;
     cout << "The area of the circle is " << area << endl;
+    return 0;
 }

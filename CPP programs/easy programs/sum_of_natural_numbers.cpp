@@ -8,4 +8,5 @@ int main()
     int sum = 0;
     sum = number * (number + 1) / 2;
     cout << "The sum of the number is " << sum << endl;
+    return 0;
 }

@@ -14,4 +14,5 @@ int main()
     {
         cout << "the number is odd" << endl;
     }
+    return 0;
 }

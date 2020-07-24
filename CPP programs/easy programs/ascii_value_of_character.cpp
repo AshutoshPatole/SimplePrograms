@@ -8,4 +8,5 @@ int main()
     cout << "Enter the character : ";
     cin >> ch;
     cout << "The ASCII value is " << int(ch) << endl;
+    return 0;
 }

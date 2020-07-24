@@ -14,4 +14,5 @@ int main()
         length++;
     }
     cout << "the length of the numbers is " << length << endl;
+    return 0;
 }

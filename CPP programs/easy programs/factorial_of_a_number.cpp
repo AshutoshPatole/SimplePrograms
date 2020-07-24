@@ -23,4 +23,5 @@ int main()
     cout << "Enter the number : ";
     cin >> number;
     cout << "Factorial of number " << number << " is " << facto(number) << endl;
+    return 0;
 }

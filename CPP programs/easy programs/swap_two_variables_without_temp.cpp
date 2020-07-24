@@ -11,5 +11,6 @@ int main(){
     a = b - a;
     b = b - a;
     cout << a << " " << b << endl;
+    return 0;
 
 }
