@@ -1,5 +1,4 @@
-// Problem link => https://www.hackerrank.com/challenges/cpp-sets/problem?h_r=next-challenge&h_v=zen
-
+// Problem link => https://www.hackerrank.com/challenges/cpp-sets/problem?
 #include <cmath>
 #include <cstdio>
 #include <vector>
