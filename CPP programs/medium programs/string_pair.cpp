@@ -41,20 +41,20 @@ int main()
     vector<int> v;
     int item;
     int vowels_count = 0;
-    string hundred = "one hundred";
-    string correct_hundred = "hundred";
-
     for (int i = 0; i < total_items; i++)
     {
         cin >> item;
         v.push_back(item);
         string s;
-        s = convertToWords(item);
-        if (hundred.compare(s))
+        if (item == 100)
         {
-            // cout << "equal" << endl;
-            s.assign(correct_hundred);
+            s = "hundred";
         }
+        else
+        {
+            s = convertToWords(item);
+        }
+
         for (int i = 0; s[i] != '\0'; ++i)
         {
             if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u')
@@ -62,23 +62,23 @@ int main()
                 vowels_count++;
             }
         }
+        // cout << "string ===== > " << s << " " << vowels_count << endl;
     }
-    // cout << vowels_count << endl;
-    // cout << "11111111111111111" << endl;
+
     int pairs_count = 0;
     int vector_size = v.size();
+    // cout << "vector size   ===>   " << vector_size << endl;
     for (int i = 0; i < vector_size; i++)
     {
-        // cout << "2222222222222222222222" << endl;
         for (int j = i + 1; j < vector_size; j++)
         {
-            // cout << "33333333333333333" << endl;
             if (v[i] + v[j] == vowels_count)
             {
                 pairs_count++;
             }
         }
     }
+    // cout << "pairs  ==>  " << pairs_count << endl;
     if (pairs_count != 0)
     {
         cout << convertToWords(pairs_count);
