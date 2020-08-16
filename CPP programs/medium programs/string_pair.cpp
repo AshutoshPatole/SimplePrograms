@@ -26,7 +26,7 @@ string numberToWords(int n, string s)
 
 string convertToWords(int n)
 {
-    string out;
+    string out = "";
 
     out += numberToWords(((n / 100) % 10), "hundred ");
     out += numberToWords((n % 100), "");
@@ -79,9 +79,12 @@ int main()
         }
     }
     // cout << "pairs  ==>  " << pairs_count << endl;
+    string answer;
     if (pairs_count != 0)
     {
-        cout << convertToWords(pairs_count);
+        answer = convertToWords(pairs_count);
+        answer.pop_back();
+        cout << answer;
     }
     else
     {
