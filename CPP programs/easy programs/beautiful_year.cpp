@@ -8,9 +8,6 @@ int main()
 
     int year;
     cin >> year;
-    // int flag = 0;
-    // int remainder = 0;
-    // vector<int> v;
     while (true)
     {
         year += 1;
