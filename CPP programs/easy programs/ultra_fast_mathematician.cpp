@@ -12,11 +12,11 @@ int main()
     {
         if (s[i] == s1[i])
         {
-            s[i] = '1';
+            s[i] = '0';
         }
         else
         {
-            s[i] = '0';
+            s[i] = '1';
         }
     }
     cout << s;

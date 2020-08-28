@@ -7,6 +7,7 @@ int main()
     cout << "==============================     ROT 13     ============================" << endl;
     while (true)
     {
+        cout << "Enter the string : ";
         string s;
         getline(cin, s);
 
