@@ -10,7 +10,7 @@ int main()
     int choice;
     while (1)
     {
-        cout <<"==================================" <<  endl;
+        cout << "==================================" << endl;
         cout << "Vector Operations " << endl;
         cout << "1.Insert Element into the Vector" << endl;
         cout << "2.Delete Last Element of the Vector" << endl;
@@ -47,9 +47,9 @@ int main()
             break;
         case 5:
             cout << "Displaying Vector by Iterator: ";
-            for (iter = v.begin(); iter != v.end(); iter++)
+            for (auto i : v)
             {
-                cout << *iter << " ";
+                cout << i << " ";
             }
             cout << endl;
             break;
