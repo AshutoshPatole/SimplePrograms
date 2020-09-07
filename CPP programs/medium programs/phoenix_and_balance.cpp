@@ -1,4 +1,8 @@
 /// problem link => https://codeforces.com/problemset/problem/1348/A
+
+
+// Not correct Solution
+
 #include <iostream>
 #include <vector>
 #include <math.h>
