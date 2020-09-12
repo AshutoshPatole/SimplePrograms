@@ -2,6 +2,7 @@
     "files.associations": {
         "ostream": "cpp",
         "iostream": "cpp",
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "iomanip": "cpp"
     }
 }
