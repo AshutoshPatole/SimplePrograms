@@ -3,6 +3,9 @@
         "ostream": "cpp",
         "iostream": "cpp",
         "numeric": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "algorithm": "cpp"
     }
 }
