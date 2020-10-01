@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     int num1, num2;
+    cout<<"Enter 2 numbers";
     cin >> num1;
     cin >> num2;
     int sum1 = 0, sum2 = 0;
