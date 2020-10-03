@@ -10,8 +10,8 @@ int main()
    cout << "Enter key: ";
    cin >> key;
    length = msg.length();
+   cout<<endl;
    cout << "Enter your choice \n1. Encryption \n2. Decryption \n3. Exit\n";
-   cout << "Option : ";
    cin >> choice;
    if (choice == 1)
    {
