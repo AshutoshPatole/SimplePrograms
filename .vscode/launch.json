@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AES",
+            "request": "launch",
+            "mainClass": "AES",
+            "projectName": "SimplePrograms_62e0c407"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DES",
             "request": "launch",
             "mainClass": "DES",
