@@ -11,16 +11,15 @@ int main()
 
         int count = 1;
 
-        while (s[i] == s[i + 1])
+        while (int(s[i]) == int(s[i + 1]))
         {
             count++;
             i++;
 
-            // cout << s[i] << "=>" << s[j];
+          
         }
         cout << s[i] << count;
-        // cout<<i<<"=>"<<j<<endl;
-    }
+          }
 
     return 0;
 }
