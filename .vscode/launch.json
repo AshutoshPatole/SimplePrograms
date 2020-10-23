@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DSS",
+            "request": "launch",
+            "mainClass": "DSS",
+            "projectName": "SimplePrograms_62e0c407"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SHA1",
+            "request": "launch",
+            "mainClass": "SHA1",
+            "projectName": "SimplePrograms_62e0c407"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Diffie",
+            "request": "launch",
+            "mainClass": "Diffie",
+            "projectName": "SimplePrograms_62e0c407"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - AES",
             "request": "launch",
             "mainClass": "AES",

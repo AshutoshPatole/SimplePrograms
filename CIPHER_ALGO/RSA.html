@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>RSA Encryption</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <center>
+        <h1>RSA Algorithm</h1>
+        <h2>Implemented Using HTML & Javascript</h2>
+        <hr>
+        <table>
+            <tr>
+                <td>Enter First Prime Number (p):</td>
+                <td><input type="number" id="p"></td>
+            </tr>
+            <tr>
+                <td>Enter Second Prime Number (q):</td>
+                <td><input type="number" id="q"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter the Message(cipher text):<br>[A=1, B=2,...]</td>
+                <td><input type="number" id="msg"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Public Key (e,n):</td>
+                <td>
+                    <p id="publickey"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Private Key (d,n):</td>
+                <td>
+                    <p id="privatekey"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Cipher Text:</td>
+                <td>
+                    <p id="ciphertext"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><button onclick="RSA();">Apply RSA</button></td>
+            </tr>
+        </table>
+    </center>
+</body>
+<script type="text/javascript">
+    function checkPrime(n) {
+        var i, flag = true;
+        n = parseInt(n)
+        for (i = 2; i <= n - 1; i++)
+            if (n % i == 0) {
+                flag = false;
+                break;
+            }
+        return flag;
+    }
+
+    function RSA() {
+        var gcd, p, q, M, n, t, e, i, x, C, d, dt;
+        gcd = function(a, b) {
+            return (!b) ? a : gcd(b, a % b);
+        };
+        p = document.getElementById('p').value;
+        q = document.getElementById('q').value;
+        if (!(checkPrime(p) && checkPrime(q))) {
+            alert("p & q should always be prime numbers");
+            return;
+        }
+        M = document.getElementById('msg').value;
+        n = p * q;
+        t = (p - 1) * (q - 1);
+        for (e = 2; e < t; e++) {
+            if (gcd(e, t) == 1) {
+                break;
+            }
+        }
+        i = 0;
+        while (1) {
+            x = 1 + i * t;
+            if (x % e == 0) {
+                d = x / e;
+                break;
+            }
+            i++;
+        }
+        C = (Math.pow(M, e).toFixed(0)) % n;
+        dt = (Math.pow(C, d).toFixed(0)) % n;
+        document.getElementById('publickey').innerHTML = e + "," + n;
+        document.getElementById('privatekey').innerHTML = d + "," + n;
+        document.getElementById('ciphertext').innerHTML = C;
+    }
+</script>
+
+</html>
