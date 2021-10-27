@@ -23,8 +23,8 @@ int main()
         }
     }
     if (sum1 == num1 && sum2 == num2)
-        cout << "friendly pair";
+        cout << "amicable pair";
     else
-        cout << "not friendly piar";
+        cout << "not amicable pair";
     return 0;
 }
